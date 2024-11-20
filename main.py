@@ -8,7 +8,6 @@ from urllib.parse import urlunparse
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 
-
 def get_tiktok_live_data_from_pc(user_agent, pc_live_url):
     headers = {
         'User-Agent': user_agent
@@ -119,6 +118,7 @@ if __name__ == '__main__':
     url_without_query = urlunparse(parsed_url._replace(query=""))
 
     user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+
     live_data = get_tiktok_live_data_from_pc(user_agent, url_without_query)
 
     print("live_data:")
