@@ -114,6 +114,9 @@ def save_video_slice(user_agent, record_url):
 
 if __name__ == '__main__':
     url = input("tiktok直播的链接地址: ")
+    # url = "https://www.tiktok.com/@chingronng/live"
+    # url = "https://www.tiktok.com/@chingronng/live?enter_from_merge=pc_share&enter_method=pc_share&is_from_webapp=1&sender_device=pc"
+
     parsed_url = urlparse(url)
     url_without_query = urlunparse(parsed_url._replace(query=""))
 
